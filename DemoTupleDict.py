@@ -54,3 +54,7 @@ print(device)
 print(device[0])
 
 
+#반복 
+for item in device.items():
+    print(item)
+
