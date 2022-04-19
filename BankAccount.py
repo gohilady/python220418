@@ -17,5 +17,11 @@ class BankAccount:
 #인스턴스 객체를 생성
 account1 = BankAccount(100, "전우치", 15000)
 account1.withdraw(3000)
+
+# 외부 접근 불가
 account1.balance = 1500000000
+#print(account1.__balance)
+
+#백도어 접근
+print(account1._BankAccount__balance)
 print(account1)
